@@ -1,0 +1,66 @@
+ /* interface login */
+
+.login_body{
+    background-color: rgba(100, 83, 153, 1);
+    background:no-repeat 10% 100%;
+    background: fixed;
+   background-size: cover;
+   background-image: url('./img_veterinaria/portada_login2.jpg');
+    /* background-image: url('./img_veterinaria/perrito.jpg'); */
+}
+
+
+
+.tarjeta{
+    width: auto;
+    height: auto;
+    background-color:rgba(100, 83, 153, 1);
+    color:black;
+    border-radius: 20px;
+   
+}
+
+
+.boton_enviar{
+    padding: 10px;
+
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.boton_enviar:hover{
+
+    padding: 10px;
+    color: #ffffff;
+    background-color: rgba(100, 83, 153, 1);
+    border-radius: 10px;
+    font-weight: bold;
+
+} 
+
+
+/*vista roles */ 
+
+.vistaRoles{
+    background-color: rgba(100, 83, 153, 1);
+    background:no-repeat 100% 100%;
+    background: fixed;
+    background-size: cover;
+   background-image: url('./img_veterinaria/portada_login.jpg');
+    /* background-image: url('./img_veterinaria/perrito.jpg'); */
+}
+
+
+
+
+
+
+/*Adaptación de pantalla media query */ 
+
+@media (max-width:900px)
+{
+    
+
+    
+}
+   

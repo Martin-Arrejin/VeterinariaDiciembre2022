@@ -1,0 +1,206 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+  
+
+.form-group{
+        background-color: rgba(100, 83, 153, 1) !important;
+        margin: 0px;
+        width: auto !important;
+        height:auto!important;
+        align-content: center;
+        color:#ffffff;
+        
+    }
+.form-label{
+   color:#ffffff;
+}
+.volver{
+
+ margin:20px !important;
+ display: inline;
+ padding-top: -10px !important;
+  padding-left:900px !important;
+}
+
+
+/*  */
+.formulario__label{
+  display: block;  /*abarca todo el ancho*/
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.formulario__grupo-input{
+  position: relative;
+}
+.formulario__input{
+ width: 100%;
+ background-color:#ffffff;
+ border:4px solid transparent;
+ border-radius: 3px;
+ height: 45px;
+ line-height: 45px;/*cuando se escriba adentro*/ 
+ /*padding: arriba derecha abajo izquierda*/
+
+ padding: 0 40px 0 10px; 
+ transition: .3s ease all; /*transicion de tiempo para todas las propiedades*/ 
+
+}
+.formulario__input:focus{
+
+  border:3px solid #0075ff;
+  outline:none; 
+  box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+
+}
+.formulario__input-error{
+  font-size: 16px;
+  margin-top: 0;
+  color:#f3ff06;
+  text-align: center;
+  display: none; 
+  background-color: #a90e0e;
+}
+.formulario__input-error-activo{
+  display: block;
+  display: inline;
+padding: 2px;
+  margin: 2px; 
+ 
+}
+.formulario__validacion-estado{
+position: absolute;
+right: 10px;
+bottom: 15px;
+z-index: 100px; 
+font-size:14px;
+opacity: 0; 
+
+}
+
+.formulario__mensaje{
+  height: 45px;
+  line-height: 45px;
+  margin: 0px 0px 10px 0px;
+  background-color: #a90e0e;
+  padding: 0 15px;
+  border-radius:3px;
+  display: none !important;  
+
+ 
+}
+.formulario__mensaje-activo{
+  
+  display:block !important; 
+
+ 
+}
+.formulario__mensaje .p {
+  margin: 0px;
+  text-align: center;
+ 
+
+}
+.formulario__btn-enviar{
+ grid-column: span 2; 
+} 
+
+.formulario__mensaje-exito{
+font-size:14px;
+background-color: #139401;
+margin: 10px 0px 0px 0px;
+display: none;
+}
+.formulario__mensaje-exito-activo{
+display: block;
+}
+
+/*especial turno */
+.contenedorNuevo .fas{
+position: relative;
+left:300px;
+bottom: 25px;
+z-index: 100px; 
+font-size:14px;
+color:#0075ff;
+opacity: 1; 
+}
+
+
+
+
+
+/*---estilo validaciones circle y check--*/ 
+.formulario__grupo-correcto .formulario__validacion-estado
+{
+color:#0075ff;
+opacity: 1; 
+
+}
+.formulario__grupo-incorrecto .formulario__label
+{
+color:#f3ff06;
+
+opacity: 1; 
+
+
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado
+{
+color:#ff0000;
+opacity: 1; 
+
+
+
+}
+.formulario__grupo-incorrecto .formulario__input
+{
+border:3px solid #c8d117;
+box-shadow: 3px 0px 30px rgba(240, 255, 31, 0.4);
+
+}
+/* #agenda{
+  zoom: 0.75 !important;
+  background-color: #13a90e!important;;
+}.rowgroup {
+  height: 300px !important;;  /* Edit as required */
+
+
+/*   calles  */
+
+input[type="text"] {
+  width: 100%;
+ padding: 15px 10px; 
+  border: none;
+  border-bottom: 1px solid #645979; 
+  outline: none;
+/*   border-radius: 5px 5px 0 0; */
+  background-color: #ffffff;
+  font-size: 16px;
+}
+ul {
+  list-style:none;
+}
+.list {
+
+  background-color: rgba(100, 83, 153, 1) !important;
+  left:-80px;
+  border-radius: 0 0 5px 5px;
+}
+.list-items {
+    width: 100%;
+  padding: 10px 10px;
+} 
+.list-items:hover {
+    width: 100%;
+  background-color: rgb(241, 10, 245) !important;
+}
+
+
+

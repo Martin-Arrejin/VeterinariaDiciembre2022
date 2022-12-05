@@ -1,0 +1,458 @@
+/*siderbar social*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+ 
+[class^="entypo-"]:before {
+ font-family: 'entypo', sans-serif;
+}
+body {
+  background: #e6e6e6;
+}
+#social-sidebar {
+   display: block !important;
+   position: fixed;
+   z-index: 9999999;
+   left: -10px;
+   top: 60%;
+}
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+ 
+#social-sidebar a {
+ background: rgba(0, 0, 0, 0.6); 
+
+ color: #fff;
+    text-decoration: none;
+ display: block;
+ height: 50px;
+ width: 50px;  
+ font-size: 24px;
+ line-height: 50px;
+ position: relative;
+ text-align: center;
+    cursor: pointer;
+}
+#social-sidebar a:hover span {
+ left: 120%;
+ opacity: 1;
+}
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+ border-radius: 3px;
+ line-height: 24px;
+ left: -100%;
+ margin-top: -16px;
+ opacity: 0;
+ padding: 4px 8px;
+ position: absolute;
+ transition: opacity .3s, left .4s;
+ top: 50%;
+ z-index: -1;
+}
+ 
+#social-sidebar a span:before {
+ content: "";
+ display: block;
+ height: 8px;
+  width: 8px;
+ left: -4px;
+ margin-top: -4px;
+ position: absolute;
+ top: 50%;
+ transform: rotate(45deg);
+}
+ 
+#social-sidebar a[class*="chat"]:hover,
+#social-sidebar a[class*="chat"] span,
+#social-sidebar a[class*="chat"] span:before {background: #05a148;}
+ 
+
+
+ 
+#social-sidebar a[class*="instagrem"]:hover,
+#social-sidebar a[class*="instagrem"] span,
+#social-sidebar a[class*="instagrem"] span:before {background: #ea4c89;}
+
+
+
+
+/*estilo laravel*/ 
+
+body{
+    overflow-x:hidden; 
+   
+}
+.fondo_veterinario{
+   background-color: rgba(100, 83, 153, 1) !important;
+   
+}
+
+/*<!-- Cabezera barra -->*/
+#barra{
+     
+  /*   background-color: #645399;  
+  background-color: #645399;  
+  background: -webkit-linear-gradient(to bottom, #E100FF, #7F00FF);  
+  background: linear-gradient(to bottom, #E100FF, #7F00FF); 
+  */
+  background-color: rgba(100, 83, 153, 1) !important;
+   
+}
+
+
+/*<!-- Menú -->*/
+#menu{
+font-size: 15px;
+font-weight:bold;
+
+}
+#menu a{
+   color:#645399;
+   border-radius:15px;
+   padding:15px;
+   box-shadow:0px 0px 2px rgb(0,0,0,0.2) inset;
+   margin:30px;
+   padding: 20px;
+
+  
+   
+}
+#menu a:hover{
+   color:#ffffff;
+   background-color: rgba(100, 83, 153, 1);
+  
+}
+
+#menu img{
+padding-right:5px;
+padding-bottom:5px;
+}
+
+/*<!-- Servicios -->*/
+#servicios{
+ /*   background: #7F00FF;   fallback for old browsers 
+   background: -webkit-linear-gradient(to bottom, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 
+   background: linear-gradient(to bottom, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+   
+    */
+
+   background-color: rgba(100, 83, 153, 1);
+   padding: 5px;
+   text-align:center !important;
+   align-items: center;
+   align-content: center;
+   
+}
+#servicios h3,p{
+   color:#ffffff;
+   font-weight:bold;
+   
+}
+/* carrusel */
+.carousel-inner
+{
+   max-height:800px;
+ 
+}
+.carousel-inner h5{
+   background-color: rgba(100, 83, 153, 0.7);
+   color:#ffffff;
+   border-radius: 40px;
+   padding:10px;
+   margin: 1px;
+   text-align:center;
+   font-size: 25px;
+   display: inline;
+}
+
+/* quienes somos introducción*/
+#titulo_intro{
+   
+color:#645399;
+font-weight: bold;
+font-size: 25px;
+}
+#intro p{
+   font-size: 18px;
+   color:#000000;
+}
+/*contacto fomulario*/ 
+.formulario {
+    
+   margin: 50px;
+   height: 400px;
+   padding:50px;
+   text-align:center;
+   background-color: rgba(100, 83, 153, 0.8);
+   border-radius: 10px;
+   
+   
+} .fondo_formulario{
+  
+   background:no-repeat 50% 50%;
+   background-size: cover;
+   background-image: url('./img_veterinaria/perros.png');
+}
+
+.formulario label{
+   padding:10px;
+   color:#ffffff;
+   text-align:center;
+   
+}
+img.btn-whatsapp {
+  
+   display: block !important;
+   position: fixed;
+   z-index: 9999999;
+   bottom: 20px;
+   right: 20px;
+   cursor: pointer;
+   border-radius:100px !important;
+   
+   }
+   img.btn-whatsapp:hover{
+   border-radius:100px !important;
+   -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+   -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+   box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+   transition-duration: 1s;
+   } 
+
+/*parrallax*/ 
+
+.parrallax{
+   
+   background:fixed no-repeat;
+   background-size:cover;
+   
+   }
+   
+#seccion_parrallax{
+   width:100%;
+   height:500px;
+   
+   background-image: url('./img_veterinaria/perroygato.jpg');
+   
+}
+
+#seccion_parrallax h1{
+
+   color:#000000;
+   text-align:center;
+   font-size: 22px;
+   letter-spacing: 0.5pt;
+   font-weight: bold;
+  text-shadow: black 1em 0.1em 0.2em; 
+  padding-top:100px;
+ 
+ 
+   
+}
+
+/*formulario turno */
+
+.formulario_turno{
+
+   margin: 30px;
+   padding:50px;
+   text-align:center;
+   background-color: rgba(100, 83, 153, 0.9);
+   border-radius: 5px;
+}
+.formulario_turno label{
+   padding:10px;
+   color:#ffffff;
+   text-align:center;
+   
+}
+
+
+.contenido_turnos{
+
+
+   background:no-repeat 50% 50%;
+   background-size: cover;
+   background-image: url('./img_veterinaria/perritofeliz.jpg');
+}
+
+/*Modal Turno */
+
+#myModal{
+   background:no-repeat 50% 50%;
+   background-size: cover;
+   background-image: url('./img_veterinaria/patitas_animadas.gif');
+   opacity: 0.9;
+ /*   background-color: rgba(100, 83, 153, 0.6) !important; */
+
+}.modal-content {
+   color:rgba(250, 250,250, 1) !important;
+   
+   background-color: rgba(100, 83, 153, 1) !important;
+   opacity:1 !important;  
+
+}.modal-dialog{
+   background-color: rgba(250, 250,250, 1) !important;
+   padding: 3px;
+   margin: 2px;
+   opacity:1 !important;  
+}
+
+
+
+
+
+/*footer */ 
+.footer{
+   margin: 0px !important;
+   padding: 100px;
+   height: auto;
+/*    background: #7F00FF;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to bottom, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+ /*  background: linear-gradient(to bottom, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-color: rgba(100, 83, 153, 1) !important;
+   
+
+   text-align:center !important;
+   align-items: center;
+   align-content: center;
+   
+/*    background-color:#645399; */
+
+}
+.footer p{
+   color:#ffffff;
+   font-weight: bold;
+
+}
+.footer a{
+display: block;
+color:#ffffff;
+}
+.footer a:hover{
+   display: block;
+   color:rgba(0, 0, 0, 0.5);
+   }
+.navegadorFooter a{
+color:#ffffff;
+font-weight: bold;
+
+}
+.navegadorFooter a:hover{
+ color: rgba(0, 0, 0, 0.5);
+}
+#mapa{
+   color:#ffffff;
+    text-decoration: none;
+   font-weight: bold;
+}
+#mapa a:hover{
+   color:rgba(0, 0, 0, 0.5);
+}
+
+/* .iconos{
+   background-color: rgba(232, 228, 241, 0.2);
+   border-radius:100px;
+   margin: 10px;
+   padding: 10px;
+  
+} */
+
+.iconos:hover{
+       -webkit-animation: tiembla 0.2s infinite;
+       background-color: rgba(232, 228, 241, 0.2);
+       border-radius:100px;
+     
+       padding: 10px;
+       
+}
+     @-webkit-keyframes tiembla{
+       0%  { -webkit-transform:rotateZ(-5deg); }
+       50% { -webkit-transform:rotateZ( 0deg) scale(1); }
+       100%{ -webkit-transform:rotateZ( 5deg); }
+
+}
+
+
+
+
+/*Adaptación de pantalla media query */ 
+
+@media (max-width:900px)
+{
+   #intro{
+       font-size: 18px !important;
+       text-align:center;
+   }
+   #titulo_intro{
+       
+           font-size: 18px !important;
+       
+   }
+   #servicios{
+      padding-top: 100px;
+      height: 1300px !important;
+   }
+   #servicios .row{
+       width:100% !important;
+      
+       text-align:center;
+       padding-top:20px;
+       padding-bottom:20px;
+       
+   }
+   #menu img{
+       padding-bottom:20px !important;
+          
+       }
+   #formulario{
+       width:100% !important;
+       /* height:50%; */
+       text-align:center;
+       padding:10px;
+       margin: 30px;
+   }
+   #menu a{
+       margin: 5px !important;
+       padding-left: 20px;
+       padding-right: 20px;
+       text-align:center;
+      
+       }
+   
+   #seccion_parrallax h1{
+
+       color:#ffffff !important;
+       text-align:center;
+       font-family: 'Anton', sans-serif;
+       font-size: 18px;
+   
+   }
+   
+   .footer{
+       text-align:center !important;
+       align-items: center;
+       align-content: center;
+       height: auto;
+    }
+   
+    #seccion_parrallax{
+       width:100%;
+       height:400px;
+      
+       background-position: 50% 50%;
+       
+       background-image: url('./img_veterinaria/perros.png');
+       
+       } 
+
+   
+}
+  
+   
+   
+   
+    
+    
+

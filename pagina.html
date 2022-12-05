@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación</title>
+</head>
+<body>
+<form id="todo-form">
+<input type="text" id="todo" />
+<input type="submit" id="enviar"  />
+</form>
+
+<ul id="todo-list">
+
+</ul>
+
+ <p id="texto" class="texto"></p>
+ <!--  <p id="texto2" class="texto2">ENTRANDO AL DOM</p>
+ --> 
+</body>
+<script>
+const arregloTodos = []; 
+window.onload = () =>{ // una vez que carga la ventana 
+
+const formulario = document.getElementById('todo-form');
+formulario.onsubmit = (e) =>{ //una vez que se genera enviar 
+e.preventDefault();
+const todo = document.getElementById('todo');
+const todoTexto = todo.value; //agarra el texto de input 
+todo.value = '';
+console.log(todoTexto);
+arregloTodos.push(todoTexto);
+const todoList = document.getElementById('todo-list');
+/* todoList.innerHTML =''; */
+/* for(let i=0;i<arregloTodos.length;i++){
+  todoList.innerHTML += '<li>' + arregloTodos[i] +'</li>'
+} */
+//map devuelve un arreglo, esta forma es reducida 
+//arreglo 
+const todoTemplate = arregloTodos.map(elemento=>`<input type="radio" id="hora" name="fav_language" value='${elemento}'> ${elemento} <br>`);
+console.log(todoTemplate);
+todoList.innerHTML = todoTemplate.join('');
+
+
+/*
+const todoTemplate = arregloTodos.map(elemento => ()
+{
+   return '<li>'+ elemento '<li>'; 
+})
+*/
+/* let parrafo = document.getElementById('texto');
+parrafo.innerText = `${todoTexto}`; //agregar texto nuevo al html  */
+}
+
+
+}
+
+    /*
+let parrafo = document.getElementById('texto');
+parrafo.innerText = "Hola Mundo" //agregar texto nuevo al html 
+let parrafo2 =document.getElementById('texto2');
+parrafo2.innerHTML = '<li>Elemento 1</li><li>Elemento 2</li>'
+parrafo2.innerHTML = '<h1>Elemento 1</h2>'
+*/
+</script>
+</html>
